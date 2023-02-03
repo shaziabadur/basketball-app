@@ -11,16 +11,15 @@ const Parent = () => {
 return (
     <div className='parent'>
         <Header className='header' />
-        <div className='parent-content'>
+        {/* <div className='parent-content'>
             <Routes>
                 <Route path="/" element={<Information />} />
                 <Route path="/Roster" element={<Roster />} />
                 <Route path="/Schedule" element={<Schedule />} />
                 <Route path="/Results" element={<Results />} />
                 <Route path="/Information" element={<Information />} />
-
             </Routes>
-        </div>
+        </div> */}
     </div>
 );}
 
