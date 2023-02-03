@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from './Logo';
-import {AppBar, Tab, Tabs, Toolbar, Typography} from '@mui/material'
+import {AppBar, Button, Tab, Tabs, Toolbar, Typography} from '@mui/material'
 import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
 
 const Header = () => {
@@ -12,12 +12,15 @@ const Header = () => {
                     <SportsBasketballIcon sx={{marginRight: '.5em'}}/>
                 </Typography>
                 <h2>St. Martha Sports Ministry</h2>
-                <Tabs sx={{marginLeft: 'auto'}} textColor='inherit'>
+                <Tabs sx={{marginRight: 'auto'}} textColor='inherit'>
                     <Tab label='Roster'/>
                     <Tab label='Schedule'/>
                     <Tab label='Results'/>
                     <Tab label='Information'/>
                 </Tabs>
+
+                <Button sx={{marginLeft:'auto', backgroundColor: 'white', color: 'green'}} variant="contained">Login</Button>
+                <Button sx={{marginLeft:'1em', backgroundColor: 'white', color: 'green'}} variant="contained">Register</Button>
             </Toolbar>
         </AppBar>
     </React.Fragment>
